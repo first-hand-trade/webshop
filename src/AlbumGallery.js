@@ -1,8 +1,6 @@
 import React from "react";
 import albumData from "./albumData.json";
-import "./App.css"; // Make sure the CSS file is imported
-
-// Group the albums by category
+import "./App.css"; 
 const groupAlbumsByCategory = (albums) => {
   return albums.reduce((acc, album) => {
     const { category } = album;
