@@ -3,246 +3,287 @@
     "id": "album1",
     "title": "MAJICE DUG RUKAV",
     "coverPhotoUrl": "https://i.imgur.com/UoyFC2k.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174891600085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174891600085110&type=3",
+    "category": "PAMUČNE-LIKRA BLUZE DUG RUKAV"
   },
   {
     "id": "album2",
     "title": "ENGLESKA EXTRA JESEN ZIMA - muski mix",
     "coverPhotoUrl": "https://i.imgur.com/xCd6MPF.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174889770085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174889770085110&type=3",
+    "category": "MIKSEVI"
   },
   {
     "id": "album3",
     "title": "ENGLESKA EXTRA JESEN ZIMA - zenski mix",
     "coverPhotoUrl": "https://i.imgur.com/MSppjVY.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174889332085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174889332085110&type=3",
+    "category": "MIKSEVI"
   },
   {
     "id": "album4",
     "title": "SOFTSHELL JAKNE KREM KLASA I TANKE JAKNE SA ZIPOM EXTRA KLASA",
     "coverPhotoUrl": "https://i.imgur.com/pQBpngu.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122176361216085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122176361216085110&type=3",
+    "category": "JAKNE, PRSLUCI, SAKOI"
   },
   {
     "id": "album5",
     "title": "DUKSERICE SA RAJFESLUSOM EXTRA KLASA",
     "coverPhotoUrl": "https://i.imgur.com/sv7eUaq.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174879102085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174879102085110&type=3",
+    "category": "SPORTSKI PROGRAM I DUKSERICE"
   },
   {
     "id": "album6",
     "title": "JESENJI KREM MIX ZENSKI",
     "coverPhotoUrl": "https://i.imgur.com/JodiG3h.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122172389762085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122172389762085110&type=3",
+    "category": "MIKSEVI"
   },
   {
     "id": "album7",
     "title": "DONJI DELOVI TRENERKI",
     "coverPhotoUrl": "https://i.imgur.com/TYUUHit.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122157198602085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122157198602085110&type=3",
+    "category": "SPORTSKI PROGRAM I DUKSERICE"
   },
   {
     "id": "album8",
     "title": "KREM KLASA TANKE JAKNE I MANTILI",
     "coverPhotoUrl": "https://i.imgur.com/9RvrnBN.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122176278842085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122176278842085110&type=3",
+    "category": "JAKNE, PRSLUCI, SAKOI"
   },
   {
     "id": "album9",
     "title": "KREM KLASA DUKSERICA",
     "coverPhotoUrl": "https://i.imgur.com/wU59pHe.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122176020878085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122176020878085110&type=3",
+    "category": "SPORTSKI PROGRAM I DUKSERICE"
   },
   {
     "id": "album10",
     "title": "DUKSERICE SA KAPULJACOM EXTRA KLASA",
     "coverPhotoUrl": "https://i.imgur.com/4Mf20Ry.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174881556085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174881556085110&type=3",
+    "category": "SPORTSKI PROGRAM I DUKSERICE"
   },
   {
     "id": "album11",
     "title": "HALJINE SUPER KREM KLASA JESEN ZIMA MIX",
     "coverPhotoUrl": "https://i.imgur.com/Ct3rFIt.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174948984085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174948984085110&type=3",
+    "category": "HALJINE"
   },
   {
     "id": "album12",
     "title": "DUKSERICE NA OKRUGLINU",
     "coverPhotoUrl": "https://i.imgur.com/DWpIlHY.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174880686085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174880686085110&type=3",
+    "category": "SPORTSKI PROGRAM I DUKSERICE"
   },
   {
     "id": "album13",
     "title": "FASHION KREM JESEN ZIMA MIX",
     "coverPhotoUrl": "https://i.imgur.com/vZRQcZK.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174888174085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174888174085110&type=3",
+    "category": "MIKSEVI"
   },
   {
     "id": "album14",
     "title": "XXL GARDEROBA",
     "coverPhotoUrl": "https://i.imgur.com/Ut7bXsH.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122157196742085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122157196742085110&type=3",
+    "category": "MIKSEVI"
   },
   {
     "id": "album15",
     "title": "KREM KARDIGANI",
     "coverPhotoUrl": "https://i.imgur.com/whAqTQK.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122177040674085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122177040674085110&type=3",
+    "category": "DŽEMPERI"
   },
   {
     "id": "album16",
     "title": "EXTRA KLASA TRENERKI",
     "coverPhotoUrl": "https://i.imgur.com/fSV5BOq.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174936108085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174936108085110&type=3",
+    "category": "SPORTSKI PROGRAM I DUKSERICE"
   },
   {
     "id": "album17",
     "title": "FARMERICE",
     "coverPhotoUrl": "https://i.imgur.com/UdaiGgW.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122157199508085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122157199508085110&type=3",
+    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
   },
   {
     "id": "album18",
     "title": "ZENSKE PANTALONE",
     "coverPhotoUrl": "https://i.imgur.com/pHSDrV9.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155895114085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155895114085110&type=3",
+    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
   },
   {
     "id": "album19",
     "title": "BLUZE",
     "coverPhotoUrl": "https://i.imgur.com/nARqeQZ.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155420724085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155420724085110&type=3",
+    "category": "BLUZE"
   },
   {
     "id": "album20",
     "title": "HALJINE",
     "coverPhotoUrl": "https://i.imgur.com/kXQXZA4.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122156079242085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122156079242085110&type=3",
+    "category": "HALJINE"
   },
   {
     "id": "album21",
     "title": "PRSLUCI",
     "coverPhotoUrl": "https://i.imgur.com/tBEcCtA.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174885534085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174885534085110&type=3",
+    "category": "JAKNE, PRSLUCI, SAKOI"
   },
   {
     "id": "album22",
     "title": "PLISANE IGRACKE",
     "coverPhotoUrl": "https://i.imgur.com/YjTqPSd.jpegg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174886878085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174886878085110&type=3",
+    "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
   },
   {
     "id": "album23",
     "title": "MAJICE KRATAK RUKAV",
     "coverPhotoUrl": "https://i.imgur.com/GTj7Tve.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155440248085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155440248085110&type=3",
+    "category": "MAJICE KRATAK RUKAV"
   },
   {
     "id": "album24",
     "title": "HELANKE",
     "coverPhotoUrl": "https://i.imgur.com/rQuqPF5.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122159022638085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122159022638085110&type=3",
+    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
   },
   {
     "id": "album25",
     "title": "AKSESOARI KREM KLASA",
     "coverPhotoUrl": "https://i.imgur.com/93RzvU2.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174888564085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174888564085110&type=3",
+    "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
   },
   {
     "id": "album26",
     "title": "FASHION KREM LETO MIX💥",
     "coverPhotoUrl": "https://i.imgur.com/Uixgy08.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122164383500085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122164383500085110&type=3",
+    "category": "MIKSEVI"
   },
   {
     "id": "album27",
     "title": "KREM SPORT MIX",
     "coverPhotoUrl": "https://i.imgur.com/xzcEYBQ.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155894154085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155894154085110&type=3",
+    "category": "SPORTSKI PROGRAM I DUKSERICE"
   },
   {
     "id": "album28",
-    "title": "KUCNI TEKSTIL",
+    "title": "KUĆNI TEKSTIL",
     "coverPhotoUrl": "https://i.imgur.com/Td1uHpc.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174886752085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174886752085110&type=3",
+    "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
   },
   {
     "id": "album29",
     "title": "TORBE EXTRA KLASA",
     "coverPhotoUrl": "https://i.imgur.com/vabFYw3.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122165145308085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122165145308085110&type=3",
+    "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
   },
   {
     "id": "album30",
     "title": "BRAND MIX EXTRA PLUS PRVA KLASA SVE SEZONE",
     "coverPhotoUrl": "https://i.imgur.com/I34Sl1s.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122157195680085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122157195680085110&type=3",
+    "category": "MIKSEVI"
   },
   {
     "id": "album31",
-    "title": "ŠORTSEVI",
+    "title": "ŠORCEVI",
     "coverPhotoUrl": "https://i.imgur.com/9L6RObf.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155907558085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155907558085110&type=3",
+    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
   },
   {
     "id": "album32",
     "title": "BADEMANTILI",
     "coverPhotoUrl": "https://i.imgur.com/Kirxqj6.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122167413362085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122167413362085110&type=3",
+    "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
   },
   {
     "id": "album33",
     "title": "ŠALVARE",
     "coverPhotoUrl": "https://i.imgur.com/0EmrWbN.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155440644085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155440644085110&type=3",
+    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
   },
   {
     "id": "album34",
     "title": "ENGLESKA EXTRA KLASA ZENSKI MIX",
     "coverPhotoUrl": "https://i.imgur.com/y9ZcSdD.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155440752085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155440752085110&type=3",
+    "category": "MIKSEVI"
   },
   {
     "id": "album35",
     "title": "💥PAMUCNE BLUZE PRVA KLASA💥POVOLJNO📢🥳💥",
     "coverPhotoUrl": "https://i.imgur.com/94s9pOp.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122167837094085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122167837094085110&type=3",
+    "category": "BLUZE"
   },
   {
     "id": "album36",
     "title": "ENGLESKA EXTRA KLASA MUSKI MIX",
     "coverPhotoUrl": "https://i.imgur.com/o3TqcYQ.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122157197060085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122157197060085110&type=3",
+    "category": "MIKSEVI"
   },
   {
     "id": "album37",
     "title": "SNIZENJA!!!📢🥳",
     "coverPhotoUrl": "https://i.imgur.com/7Q3gzTQ.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122157360956085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122157360956085110&type=3",
+    "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
   },
   {
     "id": "album38",
     "title": "ZENSKI SAKOI",
     "coverPhotoUrl": "https://i.imgur.com/ntDzCy2.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122156083514085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122156083514085110&type=3",
+    "category": "JAKNE, PRSLUCI, SAKOI"
   },
   {
     "id": "album39",
     "title": "ENGLESKI KREM LETO ZENSKI MIX",
     "coverPhotoUrl": "https://i.imgur.com/irbZcVO.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122159018168085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122159018168085110&type=3",
+    "category": "MIKSEVI"
   },
   {
     "id": "album40",
     "title": "BRUSEVI",
     "coverPhotoUrl": "https://i.imgur.com/nyjqRxa.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122159014484085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122159014484085110&type=3",
+    "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
   },
   {
     "id": "album41",
     "title": "100% ETIKETE LETO ENGLESKI KREM-zenski mix",
     "coverPhotoUrl": "https://i.imgur.com/8rsfaxq.jpeg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155439996085110&type=3"
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155439996085110&type=3",
+    "category": "MIKSEVI"
   }
 ]

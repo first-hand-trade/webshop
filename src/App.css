@@ -57,14 +57,36 @@ a:hover {
 
 .album-gallery {
   display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.category-section {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.category-section h2 {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 5px solid #888;
+}
+
+.album-items {
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
 }
 
 .album-item {
   text-align: center;
-  transition: transform 0.3s ease-in-out;
+  width: 250px;
 }
 
 .album-item img {
