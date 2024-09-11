@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AlbumGallery from "./AlbumGallery";
+import AppHeader from "./AppHeader";
+import "./App.css";
 
 function App() {
+  const textStyle = { fontFamily: "Times New Roman, Times, serif" };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          TESTING AUTOMATIC DEPLOY
-        </p>
+    <div className="main-app-container" style={textStyle}>
+      <header className="main-app-header">
+        <img
+          src="https://i.imgur.com/slVWHlo.jpeg"
+          alt="First Hand Trade Logo"
+          className="brand-logo"
+        />
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://www.facebook.com/profile.php?id=61552553316969"
+          style={{ textDecoration: "none" }}
         >
-          Learn React
+          <h1>FIRST HAND TRADE</h1>
         </a>
       </header>
+      <AppHeader />
+      <AlbumGallery />
     </div>
   );
 }
