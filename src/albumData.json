@@ -285,5 +285,26 @@
     "coverPhotoUrl": "https://i.imgur.com/8rsfaxq.jpeg",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122155439996085110&type=3",
     "category": "MIKSEVI"
+  },
+  {
+    "id": "album42",
+    "title": "ZIMSKE BLUZE",
+    "coverPhotoUrl": "https://i.imgur.com/bKrYJvk.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122177992736085110&type=3",
+    "category": "BLUZE"
+  },
+  {
+    "id": "album43",
+    "title": "ZIMSKE JAKNE, KAPUTI",
+    "coverPhotoUrl": "https://i.imgur.com/Lem9Rde.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122178028628085110&type=3",
+    "category": "JAKNE, PRSLUCI, SAKOI"
+  },
+  {
+    "id": "album44",
+    "title": "BRITANSKE KREM PLUS EXTRA DUKSERICE",
+    "coverPhotoUrl": "https://i.imgur.com/A7MlY97.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122177344106085110&type=3",
+    "category": "SPORTSKI PROGRAM I DUKSERICE"
   }
 ]
