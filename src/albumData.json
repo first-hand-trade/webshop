@@ -306,5 +306,40 @@
     "coverPhotoUrl": "https://i.imgur.com/A7MlY97.jpeg",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122177344106085110&type=3",
     "category": "SPORTSKI PROGRAM I DUKSERICE"
+  },
+  {
+    "id": "album45",
+    "title": "SUPER KREM MUŠKE PANTALONE",
+    "coverPhotoUrl": "https://i.imgur.com/yZ2lby7.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122180449400085110&type=3",
+    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
+  },
+  {
+    "id": "album46",
+    "title": "KAPUTI",
+    "coverPhotoUrl": "https://i.imgur.com/QRwzxov.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122180302232085110&type=3",
+    "category": "JAKNE, PRSLUCI, SAKOI"
+  },
+  {
+    "id": "album47",
+    "title": "KAMUFLAŽNA ODEĆA",
+    "coverPhotoUrl": "https://i.imgur.com/RmCveRq.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122180301722085110&type=3",
+    "category": "MIKSEVI"
+  },
+  {
+    "id": "album48",
+    "title": "ŽENSKI DŽEMPERI I KARDIGANI SUPER KREM KLASA",
+    "coverPhotoUrl": "https://i.imgur.com/RwE3QqD.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122180298290085110&type=3",
+    "category": "DŽEMPERI"
+  },
+  {
+    "id": "album49",
+    "title": "MUŠKI DŽEMPERI I KARDIGANI SUPER KREM KLASA",
+    "coverPhotoUrl": "https://i.imgur.com/M9pVq9C.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122180298638085110&type=3",
+    "category": "DŽEMPERI"
   }
 ]
