@@ -281,7 +281,7 @@
   },
   {
     "id": "album41",
-    "title": "100% ETIKETE JESEN/ZIMA ENGLESKI KREM-zenski mix",
+    "title": "100% ETIKETE ZIMA ENGLESKI KREM-zenski mix",
     "coverPhotoUrl": "https://i.imgur.com/8rsfaxq.jpeg",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122155439996085110&type=3",
     "category": "MIKSEVI"
@@ -295,7 +295,7 @@
   },
   {
     "id": "album43",
-    "title": "ZIMSKE JAKNE, KAPUTI",
+    "title": "ZIMSKE JAKNE",
     "coverPhotoUrl": "https://i.imgur.com/Lem9Rde.jpeg",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122178028628085110&type=3",
     "category": "JAKNE, PRSLUCI, SAKOI"
@@ -337,9 +337,30 @@
   },
   {
     "id": "album49",
-    "title": "MUŠKI DŽEMPERI I KARDIGANI SUPER KREM KLASA",
+    "title": "MUŠKI DŽEMPERI I KARDIGANI",
     "coverPhotoUrl": "https://i.imgur.com/M9pVq9C.jpeg",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122180298638085110&type=3",
     "category": "DŽEMPERI"
+  },
+  {
+    "id": "album50",
+    "title": "SKI PANTALONE",
+    "coverPhotoUrl": "https://i.imgur.com/Bh2Ibsf.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122183655206085110&type=3",
+    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
+  },
+  {
+    "id": "album51",
+    "title": "IMITACIJA BUNDI I KRZNA",
+    "coverPhotoUrl": "https://i.imgur.com/0uJWzdK.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122182635674085110&type=3",
+    "category": "JAKNE, PRSLUCI, SAKOI"
+  },
+  {
+    "id": "album52",
+    "title": "POLAR DUKSEVI",
+    "coverPhotoUrl": "https://i.imgur.com/nfhkV3x.jpeg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122181431054085110&type=3",
+    "category": "SPORTSKI PROGRAM I DUKSERICE"
   }
 ]
