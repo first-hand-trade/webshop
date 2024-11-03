@@ -41,7 +41,7 @@ const AlbumGallery = () => {
                 {groupedAlbums[category].map((album) => (
                   <a
                     key={album.id}
-                    href={album.albumLink}
+                    href={encodeURIComponent(album.albumLink)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="album-item"
