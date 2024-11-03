@@ -30,6 +30,10 @@ const categoryOrder = [
 const AlbumGallery = () => {
   const groupedAlbums = groupAlbumsByCategory(albumData);
 
+  const handleAlbumClick = (albumLink) => {
+    window.open(albumLink, '_blank');
+  };
+
   return (
     <div className="album-gallery">
       {categoryOrder.map(
@@ -39,12 +43,11 @@ const AlbumGallery = () => {
               <h2>{category}</h2>
               <div className="album-items">
                 {groupedAlbums[category].map((album) => (
-                  <a
+                  <div
                     key={album.id}
-                    href={album.albumLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="album-item"
+                    onClick={() => handleAlbumClick(album.albumLink)}
+                    style={{ cursor: 'pointer' }} 
                   >
                     <div style={{ textAlign: "center", width: "250px" }}>
                       <img
@@ -58,7 +61,7 @@ const AlbumGallery = () => {
                       />
                       <p>{album.title}</p>
                     </div>
-                  </a>
+                  </div>
                 ))}
               </div>
             </div>
