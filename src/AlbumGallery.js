@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import albumData from "./albumData.json";
 import "./App.css";
+
+const usePlatform = () => {
+  const [platform, setPlatform] = useState("desktop");
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      setPlatform("android");
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      setPlatform("ios");
+    } else {
+      setPlatform("desktop");
+    }
+  }, []);
+
+  return platform;
+};
 
 const groupAlbumsByCategory = (albums) => {
   return albums.reduce((acc, album) => {
@@ -29,9 +47,10 @@ const categoryOrder = [
 
 const AlbumGallery = () => {
   const groupedAlbums = groupAlbumsByCategory(albumData);
+  const platform = usePlatform();
 
   const handleAlbumClick = (albumLink) => {
-    window.open(albumLink, '_blank');
+    window.open(albumLink, "_blank");
   };
 
   return (
@@ -46,8 +65,14 @@ const AlbumGallery = () => {
                   <div
                     key={album.id}
                     className="album-item"
-                    onClick={() => handleAlbumClick(album.albumLink)}
-                    style={{ cursor: 'pointer' }} 
+                    onClick={() =>
+                      handleAlbumClick(
+                        platform === "android"
+                          ? album.albumLinkAndroid
+                          : album.albumLink,
+                      )
+                    }
+                    style={{ cursor: "pointer" }}
                   >
                     <div style={{ textAlign: "center", width: "250px" }}>
                       <img
