@@ -8,6 +8,46 @@
     "category": "PAMUČNE-LIKRA BLUZE DUG RUKAV"
   },
   {
+    "id": "album52",
+    "title": "POLAR DUKSEVI",
+    "coverPhotoUrl": "https://i.imgur.com/nfhkV3x.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/eJOgjH",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122181431054085110&type=3",
+    "category": "SPORTSKI PROGRAM I DUKSERICE"
+  },
+  {
+    "id": "album43",
+    "title": "ZIMSKE JAKNE",
+    "coverPhotoUrl": "https://i.imgur.com/Lem9Rde.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/7QTA",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122178028628085110&type=3",
+    "category": "JAKNE, PRSLUCI, SAKOI"
+  },
+  {
+    "id": "album51",
+    "title": "IMITACIJA BUNDI I KRZNA",
+    "coverPhotoUrl": "https://i.imgur.com/0uJWzdK.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/4BLq5w",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122182635674085110&type=3",
+    "category": "JAKNE, PRSLUCI, SAKOI"
+  },
+  {
+    "id": "album46",
+    "title": "KAPUTI",
+    "coverPhotoUrl": "https://i.imgur.com/QRwzxov.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/K6M48",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122180302232085110&type=3",
+    "category": "JAKNE, PRSLUCI, SAKOI"
+  },
+  {
+    "id": "album41",
+    "title": "100% ETIKETE ZIMA ENGLESKI KREM-zenski mix",
+    "coverPhotoUrl": "https://i.imgur.com/8rsfaxq.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/BZSX",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155439996085110&type=3",
+    "category": "MIKSEVI"
+  },
+  {
     "id": "album2",
     "title": "ENGLESKA EXTRA JESEN ZIMA - muski mix",
     "coverPhotoUrl": "https://i.imgur.com/xCd6MPF.jpeg",
@@ -62,6 +102,14 @@
     "albumLinkAndroid": "https://bitly.cx/MAybPj",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122176278842085110&type=3",
     "category": "JAKNE, PRSLUCI, SAKOI"
+  },  
+  {
+    "id": "album42",
+    "title": "ZIMSKE BLUZE",
+    "coverPhotoUrl": "https://i.imgur.com/bKrYJvk.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/Z5v1QY",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122177992736085110&type=3",
+    "category": "BLUZE"
   },
   {
     "id": "album9",
@@ -144,14 +192,6 @@
     "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
   },
   {
-    "id": "album19",
-    "title": "BLUZE",
-    "coverPhotoUrl": "https://i.imgur.com/nARqeQZ.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/tZAKdW",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155420724085110&type=3",
-    "category": "BLUZE"
-  },
-  {
     "id": "album20",
     "title": "HALJINE",
     "coverPhotoUrl": "https://i.imgur.com/kXQXZA4.jpeg",
@@ -200,14 +240,6 @@
     "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
   },
   {
-    "id": "album26",
-    "title": "FASHION KREM LETO MIX💥",
-    "coverPhotoUrl": "https://i.imgur.com/Uixgy08.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/Itnkg",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122164383500085110&type=3",
-    "category": "MIKSEVI"
-  },
-  {
     "id": "album27",
     "title": "KREM SPORT MIX",
     "coverPhotoUrl": "https://i.imgur.com/xzcEYBQ.jpeg",
@@ -240,28 +272,12 @@
     "category": "MIKSEVI"
   },
   {
-    "id": "album31",
-    "title": "ŠORCEVI",
-    "coverPhotoUrl": "https://i.imgur.com/9L6RObf.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/S3JD3l",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155907558085110&type=3",
-    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
-  },
-  {
     "id": "album32",
     "title": "BADEMANTILI",
     "coverPhotoUrl": "https://i.imgur.com/Kirxqj6.jpeg",
     "albumLinkAndroid": "https://bitly.cx/M0yhaJ",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122167413362085110&type=3",
     "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
-  },
-  {
-    "id": "album33",
-    "title": "ŠALVARE",
-    "coverPhotoUrl": "https://i.imgur.com/0EmrWbN.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/RPhBy",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155440644085110&type=3",
-    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
   },
   {
     "id": "album34",
@@ -304,44 +320,12 @@
     "category": "JAKNE, PRSLUCI, SAKOI"
   },
   {
-    "id": "album39",
-    "title": "ENGLESKI KREM LETO ZENSKI MIX",
-    "coverPhotoUrl": "https://i.imgur.com/irbZcVO.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/UWU8",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122159018168085110&type=3",
-    "category": "MIKSEVI"
-  },
-  {
     "id": "album40",
     "title": "BRUSEVI",
     "coverPhotoUrl": "https://i.imgur.com/nyjqRxa.jpeg",
     "albumLinkAndroid": "https://bitly.cx/3frh",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122159014484085110&type=3",
     "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
-  },
-  {
-    "id": "album41",
-    "title": "100% ETIKETE ZIMA ENGLESKI KREM-zenski mix",
-    "coverPhotoUrl": "https://i.imgur.com/8rsfaxq.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/BZSX",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122155439996085110&type=3",
-    "category": "MIKSEVI"
-  },
-  {
-    "id": "album42",
-    "title": "ZIMSKE BLUZE",
-    "coverPhotoUrl": "https://i.imgur.com/bKrYJvk.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/Z5v1QY",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122177992736085110&type=3",
-    "category": "BLUZE"
-  },
-  {
-    "id": "album43",
-    "title": "ZIMSKE JAKNE",
-    "coverPhotoUrl": "https://i.imgur.com/Lem9Rde.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/7QTA",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122178028628085110&type=3",
-    "category": "JAKNE, PRSLUCI, SAKOI"
   },
   {
     "id": "album44",
@@ -358,14 +342,6 @@
     "albumLinkAndroid": "https://bitly.cx/IzO0h",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122180449400085110&type=3",
     "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
-  },
-  {
-    "id": "album46",
-    "title": "KAPUTI",
-    "coverPhotoUrl": "https://i.imgur.com/QRwzxov.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/K6M48",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122180302232085110&type=3",
-    "category": "JAKNE, PRSLUCI, SAKOI"
   },
   {
     "id": "album47",
@@ -400,19 +376,43 @@
     "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
   },
   {
-    "id": "album51",
-    "title": "IMITACIJA BUNDI I KRZNA",
-    "coverPhotoUrl": "https://i.imgur.com/0uJWzdK.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/4BLq5w",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122182635674085110&type=3",
-    "category": "JAKNE, PRSLUCI, SAKOI"
+    "id": "album26",
+    "title": "FASHION KREM LETO MIX💥",
+    "coverPhotoUrl": "https://i.imgur.com/Uixgy08.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/Itnkg",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122164383500085110&type=3",
+    "category": "MIKSEVI"
   },
   {
-    "id": "album52",
-    "title": "POLAR DUKSEVI",
-    "coverPhotoUrl": "https://i.imgur.com/nfhkV3x.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/eJOgjH",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122181431054085110&type=3",
-    "category": "SPORTSKI PROGRAM I DUKSERICE"
+    "id": "album19",
+    "title": "BLUZE",
+    "coverPhotoUrl": "https://i.imgur.com/nARqeQZ.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/tZAKdW",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155420724085110&type=3",
+    "category": "BLUZE"
+  },
+  {
+    "id": "album39",
+    "title": "ENGLESKI KREM LETO ZENSKI MIX",
+    "coverPhotoUrl": "https://i.imgur.com/irbZcVO.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/UWU8",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122159018168085110&type=3",
+    "category": "MIKSEVI"
+  },
+  {
+    "id": "album33",
+    "title": "ŠALVARE",
+    "coverPhotoUrl": "https://i.imgur.com/0EmrWbN.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/RPhBy",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155440644085110&type=3",
+    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
+  },
+  {
+    "id": "album31",
+    "title": "ŠORCEVI",
+    "coverPhotoUrl": "https://i.imgur.com/9L6RObf.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/S3JD3l",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122155907558085110&type=3",
+    "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
   }
 ]
