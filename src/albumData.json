@@ -280,6 +280,14 @@
     "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
   },
   {
+    "id": "album47",
+    "title": "KAMUFLAŽNA ODEĆA",
+    "coverPhotoUrl": "https://i.imgur.com/RmCveRq.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/jyGls",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122180301722085110&type=3",
+    "category": "MIKSEVI"
+  },
+  {
     "id": "album34",
     "title": "ENGLESKA EXTRA KLASA ZENSKI MIX",
     "coverPhotoUrl": "https://i.imgur.com/y9ZcSdD.jpeg",
@@ -342,14 +350,6 @@
     "albumLinkAndroid": "https://bitly.cx/IzO0h",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122180449400085110&type=3",
     "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
-  },
-  {
-    "id": "album47",
-    "title": "KAMUFLAŽNA ODEĆA",
-    "coverPhotoUrl": "https://i.imgur.com/RmCveRq.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/jyGls",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122180301722085110&type=3",
-    "category": "MIKSEVI"
   },
   {
     "id": "album48",
