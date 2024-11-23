@@ -67,9 +67,10 @@ const AlbumGallery = () => {
                     className="album-item"
                     onClick={() =>
                       handleAlbumClick(
-                        platform === "android"
-                          ? album.albumLinkAndroid
-                          : album.albumLink,
+                        album.albumLink
+                        // platform === "android"
+                        //   ? album.albumLinkAndroid
+                        //   : album.albumLink,
                       )
                     }
                     style={{ cursor: "pointer" }}
