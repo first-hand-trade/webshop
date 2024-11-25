@@ -55,14 +55,8 @@ const AlbumGallery = () => {
         "fb://facewebmodal/f?href=https://www.facebook.com"
       );
     }
-    
-    if (!link.includes("?")) {
-      link += "?ref=web";
-    } else {
-      link += "&ref=web";
-    }
   
-    window.open(link, "_blank", "noopener,noreferrer");
+    window.open(link);
   };
   
 
