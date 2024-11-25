@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import albumData from "./albumData.json";
 import "./App.css";
 
@@ -6,11 +6,13 @@ const usePlatform = () => {
   const [platform, setPlatform] = useState("desktop");
 
   useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
 
-    if (/android/i.test(userAgent)) {
+    if (/FBAN|FBAV/i.test(ua)) {
+      setPlatform("facebook-app");
+    } else if (/android/i.test(ua)) {
       setPlatform("android");
-    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
       setPlatform("ios");
     } else {
       setPlatform("desktop");
@@ -46,18 +48,33 @@ const categoryOrder = [
 ];
 
 const AlbumGallery = () => {
-  const groupedAlbums = groupAlbumsByCategory(albumData);
   const platform = usePlatform();
+  const groupedAlbums = groupAlbumsByCategory(albumData);
 
-  const getPlatformLink = (albumLink) => {
+  const handleAlbumClick = (albumLink) => {
     let link = albumLink;
-    if (platform === "android") {
-      if (link.includes("www.facebook.com")) {
-        link = link.replace("www.facebook.com", "m.facebook.com");
+
+    // For Android and Facebook in-app browser, ensure proper link format
+    if (platform === "android" || platform === "facebook-app") {
+      if (link.includes("m.facebook.com")) {
+        link = link.replace("m.facebook.com", "www.facebook.com");
       }
-      link += link.includes("?") ? "&ref=web" : "?ref=web";
+
+      // Add ref to avoid redirection issues
+      if (!link.includes("?")) {
+        link += "?ref=web";
+      } else if (!link.includes("ref=")) {
+        link += "&ref=web";
+      }
     }
-    return link;
+
+    // Open link in a new tab or redirect directly
+    if (platform === "facebook-app") {
+      // Optional: Redirect users in the FB app to a troubleshooting page
+      window.location.href = "https://example.com/redirect_fb";
+    } else {
+      window.open(link, "_blank");
+    }
   };
 
   return (
@@ -72,18 +89,10 @@ const AlbumGallery = () => {
                   <div
                     key={album.id}
                     className="album-item"
-                    style={{
-                      textAlign: "center",
-                      width: "250px",
-                      marginBottom: "20px",
-                      cursor: "pointer",
-                    }}
+                    onClick={() => handleAlbumClick(album.albumLink)}
+                    style={{ cursor: "pointer" }}
                   >
-                    <a
-                      href={getPlatformLink(album.albumLink)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <div style={{ textAlign: "center", width: "250px" }}>
                       <img
                         src={album.coverPhotoUrl}
                         alt={album.title}
@@ -91,11 +100,10 @@ const AlbumGallery = () => {
                           width: "200px",
                           height: "200px",
                           objectFit: "cover",
-                          borderRadius: "5px",
                         }}
                       />
                       <p>{album.title}</p>
-                    </a>
+                    </div>
                   </div>
                 ))}
               </div>
