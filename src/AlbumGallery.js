@@ -48,11 +48,18 @@ const AlbumGallery = () => {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
 
   const handleAlbumClick = (albumLink) => {
-    const redirectUrl = `https://m.facebook.com/l.php?u=${encodeURIComponent(
-      albumLink
-    )}&ref=web`;
+    let link = albumLink.replace("www.facebook.com", "m.facebook.com");
   
-    window.open(redirectUrl, "_blank");
+    if (!link.includes("?")) {
+      link += "?ref=web&no_redirect=1";
+    } else {
+      link += "&ref=web&no_redirect=1";
+    }
+  
+    const newWindow = window.open(link, "_blank");
+    if (newWindow) {
+      newWindow.opener = null; 
+    }
   };
   
   
