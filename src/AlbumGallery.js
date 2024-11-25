@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import albumData from "./albumData.json";
 import "./App.css";
 
@@ -43,21 +43,12 @@ const categoryOrder = [
 ];
 
 const AlbumGallery = () => {
-  const platform = usePlatform();
-  const [iframeSrc, setIframeSrc] = useState(null); 
-  const iframeRef = useRef(null); 
-
   const groupedAlbums = groupAlbumsByCategory(albumData);
+  const platform = usePlatform();
+  const [selectedAlbum, setSelectedAlbum] = useState(null);
 
   const handleAlbumClick = (albumLink) => {
-    let link = albumLink;
-    if (!link.includes("?")) {
-      link += "?ref=web";
-    } else if (!link.includes("ref=")) {
-      link += "&ref=web";
-    }
-    window.open(link, '_blank');
-    setIframeSrc(link); 
+    setSelectedAlbum(albumLink);
   };
 
   return (
@@ -93,18 +84,18 @@ const AlbumGallery = () => {
             </div>
           )
       )}
-
-      {iframeSrc && (
+      {selectedAlbum && (
         <div className="iframe-container">
           <iframe
-            ref={iframeRef}
-            src={iframeSrc}
-            width="100%"
-            height="500px"
-            style={{ border: "none" }}
+            src={selectedAlbum}
             title="Facebook Album"
-            allow="autoplay; encrypted-media"
-          />
+            style={{
+              width: "100%",
+              height: "600px",
+              border: "none",
+            }}
+            allowFullScreen
+          ></iframe>
         </div>
       )}
     </div>
