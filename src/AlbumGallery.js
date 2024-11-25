@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import albumData from "./albumData.json";
 import "./App.css";
 
@@ -7,7 +7,6 @@ const usePlatform = () => {
   useEffect(() => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
     if (/android/i.test(userAgent)) {
-      alert('android');
       setPlatform("android");
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       setPlatform("ios");
@@ -45,25 +44,21 @@ const categoryOrder = [
 
 const AlbumGallery = () => {
   const platform = usePlatform();
+  const [iframeSrc, setIframeSrc] = useState(null); 
+  const iframeRef = useRef(null); 
+
   const groupedAlbums = groupAlbumsByCategory(albumData);
 
   const handleAlbumClick = (albumLink) => {
     let link = albumLink;
-  
     if (!link.includes("?")) {
       link += "?ref=web";
     } else if (!link.includes("ref=")) {
       link += "&ref=web";
     }
-  
-    if (platform === "android") {
-      const intentUrl = `intent:${link}#Intent;scheme=https;package=com.android.chrome;end`;
-      window.location.href = intentUrl;
-    } else {
-      window.open(link, "_blank");
-    }
+    window.open(link, '_blank');
+    setIframeSrc(link); 
   };
-  
 
   return (
     <div className="album-gallery">
@@ -97,6 +92,20 @@ const AlbumGallery = () => {
               </div>
             </div>
           )
+      )}
+
+      {iframeSrc && (
+        <div className="iframe-container">
+          <iframe
+            ref={iframeRef}
+            src={iframeSrc}
+            width="100%"
+            height="500px"
+            style={{ border: "none" }}
+            title="Facebook Album"
+            allow="autoplay; encrypted-media"
+          />
+        </div>
       )}
     </div>
   );
