@@ -4,21 +4,16 @@ import "./App.css";
 
 const usePlatform = () => {
   const [platform, setPlatform] = useState("desktop");
-
   useEffect(() => {
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/FBAN|FBAV/i.test(ua)) {
-      setPlatform("facebook-app");
-    } else if (/android/i.test(ua)) {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (/android/i.test(userAgent)) {
       setPlatform("android");
-    } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       setPlatform("ios");
     } else {
       setPlatform("desktop");
     }
   }, []);
-
   return platform;
 };
 
@@ -54,9 +49,6 @@ const AlbumGallery = () => {
   const handleAlbumClick = (albumLink) => {
     let link = albumLink;
   
-    if (link.includes("m.facebook.com")) {
-      link = link.replace("m.facebook.com", "www.facebook.com");
-    }
     if (!link.includes("?")) {
       link += "?ref=web";
     } else if (!link.includes("ref=")) {
@@ -64,10 +56,8 @@ const AlbumGallery = () => {
     }
   
     if (platform === "android") {
-      const intentUrl = `intent:${link}#Intent;package=com.android.chrome;end`;
+      const intentUrl = `intent:${link}#Intent;scheme=https;package=com.android.chrome;end`;
       window.location.href = intentUrl;
-    } else if (platform === "facebook-app") {
-      window.location.href = "https://example.com/redirect_fb";
     } else {
       window.open(link, "_blank");
     }
