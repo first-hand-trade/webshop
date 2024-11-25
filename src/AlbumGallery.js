@@ -49,7 +49,7 @@ const AlbumGallery = () => {
   const groupedAlbums = groupAlbumsByCategory(albumData);
   const platform = usePlatform();
 
-  const handleAlbumClick = (albumLink) => {
+  const getEmbedLink = (albumLink) => {
     let link = albumLink;
     if (platform === "android") {
       if (link.includes("www.facebook.com")) {
@@ -57,9 +57,8 @@ const AlbumGallery = () => {
       }
       link += link.includes("?") ? "&ref=web" : "?ref=web";
     }
-    window.open(link, "_self"); // Opens in the same tab to avoid session conflicts
+    return link;
   };
-  
 
   return (
     <div className="album-gallery">
@@ -70,33 +69,26 @@ const AlbumGallery = () => {
               <h2>{category}</h2>
               <div className="album-items">
                 {groupedAlbums[category].map((album) => (
-                  <div
-                    key={album.id}
-                    className="album-item"
-                    onClick={() =>
-                      handleAlbumClick(
-                        album.albumLink
-                      )
-                    }
-                    style={{ cursor: "pointer" }}
-                  >
-                    <div style={{ textAlign: "center", width: "250px" }}>
-                      <img
-                        src={album.coverPhotoUrl}
-                        alt={album.title}
+                  <div key={album.id} className="album-item">
+                    <div style={{ textAlign: "center", width: "250px", marginBottom: "20px" }}>
+                      <iframe
+                        src={getEmbedLink(album.albumLink)}
+                        title={album.title}
                         style={{
-                          width: "200px",
-                          height: "200px",
-                          objectFit: "cover",
+                          width: "100%",
+                          height: "500px",
+                          border: "none",
                         }}
-                      />
+                        loading="lazy"
+                        allowFullScreen
+                      ></iframe>
                       <p>{album.title}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-          ),
+          )
       )}
     </div>
   );
