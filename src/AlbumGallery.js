@@ -58,7 +58,7 @@ const AlbumGallery = () => {
         albumLink += "&ref=web"; 
       }
     }
-    window.open(albumLink, "_blank");
+    window.location.href = albumLink + "_blank";
   };
 
   return (
