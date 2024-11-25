@@ -47,35 +47,24 @@ const AlbumGallery = () => {
   const platform = usePlatform();
 
   const handleAlbumClick = (albumLink) => {
-    let link = albumLink.replace("www.facebook.com", "m.facebook.com");
-
-    // Force opening in browser
+    let link = albumLink.replace("m.facebook.com", "www.facebook.com");
+    
+    if(platform == 'android'){
+      link = albumLink.replace(
+        "www.facebook.com",
+        "fb://facewebmodal/f?href=https://www.facebook.com"
+      );
+    }
+    
     if (!link.includes("?")) {
-      link += "?ref=web&no_redirect=1";
+      link += "?ref=web";
     } else {
-      link += "&ref=web&no_redirect=1";
+      link += "&ref=web";
     }
-
-    if (platform === "android" || platform === "ios") {
-      // Try to open via navigator if on mobile
-      const iframe = document.createElement("iframe");
-      iframe.style.display = "none";
-      iframe.src = link;
-      document.body.appendChild(iframe);
-
-      setTimeout(() => {
-        document.body.removeChild(iframe);
-      }, 1000);
-
-      // Fallback to browser if iframe fails
-      setTimeout(() => {
-        window.open(link, "_blank");
-      }, 1500);
-    } else {
-      // Default for desktop
-      window.open(link, "_blank", "noopener,noreferrer");
-    }
+  
+    window.open(link, "_blank", "noopener,noreferrer");
   };
+  
 
   return (
     <div className="album-gallery">
