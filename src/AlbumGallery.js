@@ -49,7 +49,7 @@ const AlbumGallery = () => {
   const groupedAlbums = groupAlbumsByCategory(albumData);
   const platform = usePlatform();
 
-  const getEmbedLink = (albumLink) => {
+  const getPlatformLink = (albumLink) => {
     let link = albumLink;
     if (platform === "android") {
       if (link.includes("www.facebook.com")) {
@@ -69,21 +69,33 @@ const AlbumGallery = () => {
               <h2>{category}</h2>
               <div className="album-items">
                 {groupedAlbums[category].map((album) => (
-                  <div key={album.id} className="album-item">
-                    <div style={{ textAlign: "center", width: "250px", marginBottom: "20px" }}>
-                      <iframe
-                        src={getEmbedLink(album.albumLink)}
-                        title={album.title}
+                  <div
+                    key={album.id}
+                    className="album-item"
+                    style={{
+                      textAlign: "center",
+                      width: "250px",
+                      marginBottom: "20px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <a
+                      href={getPlatformLink(album.albumLink)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={album.coverPhotoUrl}
+                        alt={album.title}
                         style={{
-                          width: "100%",
-                          height: "500px",
-                          border: "none",
+                          width: "200px",
+                          height: "200px",
+                          objectFit: "cover",
+                          borderRadius: "5px",
                         }}
-                        loading="lazy"
-                        allowFullScreen
-                      ></iframe>
+                      />
                       <p>{album.title}</p>
-                    </div>
+                    </a>
                   </div>
                 ))}
               </div>
