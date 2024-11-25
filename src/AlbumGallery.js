@@ -50,6 +50,14 @@ const AlbumGallery = () => {
   const platform = usePlatform();
 
   const handleAlbumClick = (albumLink) => {
+    if (platform === "android") {
+      if (albumLink.includes("www.facebook.com")) {
+        albumLink = albumLink.replace("www.facebook.com", "m.facebook.com");
+      }
+      if (!albumLink.includes("&ref=web")) {
+        albumLink += "&ref=web"; 
+      }
+    }
     window.open(albumLink, "_blank");
   };
 
@@ -68,9 +76,6 @@ const AlbumGallery = () => {
                     onClick={() =>
                       handleAlbumClick(
                         album.albumLink
-                        // platform === "android"
-                        //   ? album.albumLinkAndroid
-                        //   : album.albumLink,
                       )
                     }
                     style={{ cursor: "pointer" }}
