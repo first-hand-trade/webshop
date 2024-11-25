@@ -48,6 +48,8 @@ const AlbumGallery = () => {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
 
   const handleAlbumClick = (albumLink) => {
+    let link = albumLink;
+    
     if (platform === "ios" || platform === "android") {
       link = albumLink.replace("www.facebook.com", "m.facebook.com");
     }
