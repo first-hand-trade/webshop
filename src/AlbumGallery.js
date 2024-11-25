@@ -48,8 +48,21 @@ const AlbumGallery = () => {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
 
   const handleAlbumClick = (albumLink) => {
-    setSelectedAlbum(albumLink);
+    let link = albumLink;
+    if (!link.includes("?")) {
+      link += "?ref=web";
+    } else if (!link.includes("ref=")) {
+      link += "&ref=web";
+    }
+  
+    if (platform === "android") {
+      const intentUrl = `intent:${link}#Intent;scheme=https;package=com.facebook.katana;end`;
+      window.location.href = intentUrl;
+    } else {
+      window.open(link, "_blank"); 
+    }
   };
+  
 
   return (
     <div className="album-gallery">
