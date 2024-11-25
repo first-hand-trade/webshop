@@ -50,16 +50,16 @@ const AlbumGallery = () => {
   const platform = usePlatform();
 
   const handleAlbumClick = (albumLink) => {
+    let link = albumLink;
     if (platform === "android") {
-      if (albumLink.includes("www.facebook.com")) {
-        albumLink = albumLink.replace("www.facebook.com", "m.facebook.com");
+      if (link.includes("www.facebook.com")) {
+        link = link.replace("www.facebook.com", "m.facebook.com");
       }
-      if (!albumLink.includes("&ref=web")) {
-        albumLink += "&ref=web"; 
-      }
+      link += link.includes("?") ? "&ref=web" : "?ref=web";
     }
-    window.location.href = albumLink;
+    window.open(link, "_self"); // Opens in the same tab to avoid session conflicts
   };
+  
 
   return (
     <div className="album-gallery">
