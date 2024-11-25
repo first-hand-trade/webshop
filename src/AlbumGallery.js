@@ -48,20 +48,20 @@ const AlbumGallery = () => {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
 
   const handleAlbumClick = (albumLink) => {
-    let link = albumLink;
+    if (platform === "ios" || platform === "android") {
+      link = albumLink.replace("www.facebook.com", "m.facebook.com");
+    }
+
     if (!link.includes("?")) {
-      link += "?ref=web";
-    } else if (!link.includes("ref=")) {
-      link += "&ref=web";
-    }
+    link += "?ref=web&no_redirect=1";
+  } else {
+    if (!link.includes("ref=")) link += "&ref=web";
+    if (!link.includes("no_redirect=")) link += "&no_redirect=1";
+  }
   
-    if (platform === "android") {
-      const intentUrl = `intent:${link}#Intent;scheme=https;package=com.facebook.katana;end`;
-      window.location.href = intentUrl;
-    } else {
-      window.open(link, "_blank"); 
-    }
+    window.open(link, "_blank");
   };
+  
   
 
   return (
