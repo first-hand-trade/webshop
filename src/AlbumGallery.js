@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Link from "@mui/material/Link";
 import albumData from "./albumData.json";
 import "./App.css";
 
@@ -44,25 +45,18 @@ const categoryOrder = [
 
 const AlbumGallery = () => {
   const groupedAlbums = groupAlbumsByCategory(albumData);
-  const platform = usePlatform();
-  const [selectedAlbum, setSelectedAlbum] = useState(null);
 
   const handleAlbumClick = (albumLink) => {
     let link = albumLink.replace("www.facebook.com", "m.facebook.com");
-  
+
     if (!link.includes("?")) {
       link += "?ref=web&no_redirect=1";
     } else {
       link += "&ref=web&no_redirect=1";
     }
-  
-    const newWindow = window.open(link, "_blank");
-    if (newWindow) {
-      newWindow.opener = null; 
-    }
+
+    window.open(link, "_blank", "noopener,noreferrer");
   };
-  
-  
 
   return (
     <div className="album-gallery">
@@ -73,12 +67,7 @@ const AlbumGallery = () => {
               <h2>{category}</h2>
               <div className="album-items">
                 {groupedAlbums[category].map((album) => (
-                  <div
-                    key={album.id}
-                    className="album-item"
-                    onClick={() => handleAlbumClick(album.albumLink)}
-                    style={{ cursor: "pointer" }}
-                  >
+                  <div key={album.id} className="album-item">
                     <div style={{ textAlign: "center", width: "250px" }}>
                       <img
                         src={album.coverPhotoUrl}
@@ -89,27 +78,32 @@ const AlbumGallery = () => {
                           objectFit: "cover",
                         }}
                       />
-                      <p>{album.title}</p>
+                      <p>
+                        <Link
+                          href={album.albumLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => {
+                            e.preventDefault(); // Prevent default navigation
+                            handleAlbumClick(album.albumLink);
+                          }}
+                          underline="hover"
+                          sx={{
+                            cursor: "pointer",
+                            textDecoration: "none",
+                            fontWeight: "bold",
+                            color: "#3b5998",
+                          }}
+                        >
+                          {album.title}
+                        </Link>
+                      </p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
           )
-      )}
-      {selectedAlbum && (
-        <div className="iframe-container">
-          <iframe
-            src={selectedAlbum}
-            title="Facebook Album"
-            style={{
-              width: "100%",
-              height: "600px",
-              border: "none",
-            }}
-            allowFullScreen
-          ></iframe>
-        </div>
       )}
     </div>
   );
