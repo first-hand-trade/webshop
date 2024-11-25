@@ -48,15 +48,14 @@ const AlbumGallery = () => {
 
   const handleAlbumClick = (albumLink) => {
     let link = albumLink.replace("m.facebook.com", "www.facebook.com");
-    
-    if(platform == 'android'){
-      link = albumLink.replace(
-        "www.facebook.com",
-        "fb://facewebmodal/f?href=https://www.facebook.com"
-      );
+  
+    if (!link.includes("?")) {
+      link += "?ref=web";
+    } else {
+      link += "&ref=web";
     }
   
-    window.open(link);
+    window.open(link, "_blank", "noopener,noreferrer");
   };
   
 
