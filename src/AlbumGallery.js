@@ -48,14 +48,18 @@ const AlbumGallery = () => {
 
   const handleAlbumClick = (albumLink) => {
     let link = albumLink.replace("m.facebook.com", "www.facebook.com");
-  
+    
     if (!link.includes("?")) {
       link += "?ref=web";
     } else {
       link += "&ref=web";
     }
-  
-    window.open(link, "_blank", "noopener,noreferrer");
+    
+    if (platform === "android") {
+      window.location.href = link;
+    } else {
+      window.open(link, "_blank", "noopener,noreferrer");
+    }
   };
   
 
