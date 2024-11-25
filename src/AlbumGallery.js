@@ -53,29 +53,26 @@ const AlbumGallery = () => {
 
   const handleAlbumClick = (albumLink) => {
     let link = albumLink;
-
-    // For Android and Facebook in-app browser, ensure proper link format
-    if (platform === "android" || platform === "facebook-app") {
-      if (link.includes("m.facebook.com")) {
-        link = link.replace("m.facebook.com", "www.facebook.com");
-      }
-
-      // Add ref to avoid redirection issues
-      if (!link.includes("?")) {
-        link += "?ref=web";
-      } else if (!link.includes("ref=")) {
-        link += "&ref=web";
-      }
+  
+    if (link.includes("m.facebook.com")) {
+      link = link.replace("m.facebook.com", "www.facebook.com");
     }
-
-    // Open link in a new tab or redirect directly
-    if (platform === "facebook-app") {
-      // Optional: Redirect users in the FB app to a troubleshooting page
+    if (!link.includes("?")) {
+      link += "?ref=web";
+    } else if (!link.includes("ref=")) {
+      link += "&ref=web";
+    }
+  
+    if (platform === "android") {
+      const intentUrl = `intent:${link}#Intent;package=com.android.chrome;end`;
+      window.location.href = intentUrl;
+    } else if (platform === "facebook-app") {
       window.location.href = "https://example.com/redirect_fb";
     } else {
       window.open(link, "_blank");
     }
   };
+  
 
   return (
     <div className="album-gallery">
