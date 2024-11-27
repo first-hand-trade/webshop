@@ -76,7 +76,7 @@ const AlbumGallery = () => {
   //   navigate(`/videos/${albumId}`);
   // };
 
-  const handleAlbumClick = (albumId) => {
+  const handleAlbumClick = (albumLink) => {
     window.open(albumLink, "_blank");  
   };
 
