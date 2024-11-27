@@ -77,7 +77,19 @@ const AlbumGallery = () => {
   // };
 
   const handleAlbumClick = (albumLink) => {
-    window.open(albumLink, "_blank");  
+    let link = albumLink.replace("m.facebook.com", "www.facebook.com");
+    
+    if (!link.includes("?")) {
+      link += "?ref=web";
+    } else {
+      link += "&ref=web";
+    }
+    
+    if (platform === "android") {
+      window.location.href = link;
+    } else {
+      window.open(link, "_blank", "noopener,noreferrer");
+    }
   };
 
   return (
