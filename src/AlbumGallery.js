@@ -72,8 +72,12 @@ const AlbumGallery = () => {
     fetchAlbums();
   }, []); 
 
+  // const handleAlbumClick = (albumId) => {
+  //   navigate(`/videos/${albumId}`);
+  // };
+
   const handleAlbumClick = (albumId) => {
-    navigate(`/videos/${albumId}`);
+    window.open(albumLink, "_blank");  
   };
 
   return (
