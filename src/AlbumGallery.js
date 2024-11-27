@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import albumData from "./albumData.json";
 import "./App.css";
+import { useNavigate } from "react-router-dom";
 
 const usePlatform = () => {
   const [platform, setPlatform] = useState("desktop");
@@ -43,59 +44,74 @@ const categoryOrder = [
 ];
 
 const AlbumGallery = () => {
-  const groupedAlbums = groupAlbumsByCategory(albumData);
+  const [albums, setAlbums] = useState([]);
   const platform = usePlatform();
+  const groupedAlbums = groupAlbumsByCategory(albumData);
+  const navigate = useNavigate();
 
-  const handleAlbumClick = (albumLink) => {
-    let link = albumLink.replace("m.facebook.com", "www.facebook.com");
+  useEffect(() => {
+    // Fetch albums from Facebook Graph API
+    const fetchAlbums = async () => {
+      let allAlbums = [];
+      let nextPageUrl = `https://graph.facebook.com/162319753623834/albums?fields=id,name,cover_photo,picture&access_token=EAAVY2FTdg5EBO8r611rZAVJw5xJcSyVfPQWfXNh1HpzAwwpXATFyem4IwyFc4qZCnXyUcvFSiT3RAxbTVgnZBW9tsl5dFXauoZAXSzx04RemJlJp3pYtkAM8lNiNg0OJ2J5ZAdmMTZADgJUFbHcE1REozpOECqkLxJ6YLgATIKvP5nWZCORaaLJ8gOZCSZCjkZBwkZD`;
     
-    if (!link.includes("?")) {
-      link += "?ref=web";
-    } else {
-      link += "&ref=web";
-    }
-    
-    if (platform === "android") {
-      window.location.href = link;
-    } else {
-      window.open(link, "_blank", "noopener,noreferrer");
-    }
-  };
+      try {
+        while (nextPageUrl) {
+          const response = await fetch(nextPageUrl);
+          const data = await response.json();
+          allAlbums = allAlbums.concat(data.data);
+          nextPageUrl = data.paging && data.paging.next ? data.paging.next : null; 
+        }
+        setAlbums(allAlbums);
+        console.log("All Albums:", allAlbums);
+      } catch (error) {
+        console.error("Error fetching albums:", error);
+      }
+    };
   
+    fetchAlbums();
+  }, []); 
+
+  const handleAlbumClick = (albumId) => {
+    navigate(`/videos/${albumId}`);
+  };
 
   return (
     <div className="album-gallery">
-      {categoryOrder.map(
-        (category) =>
-          groupedAlbums[category] && (
-            <div key={category} className="category-section">
-              <h2>{category}</h2>
-              <div className="album-items">
-                {groupedAlbums[category].map((album) => (
-                  <div
-                    key={album.id}
-                    className="album-item"
-                    onClick={() => handleAlbumClick(album.albumLink)}
-                    style={{ cursor: "pointer" }}
-                  >
-                    <div style={{ textAlign: "center", width: "250px" }}>
-                      <img
-                        src={album.coverPhotoUrl}
-                        alt={album.title}
-                        style={{
-                          width: "200px",
-                          height: "200px",
-                          objectFit: "cover",
-                        }}
-                      />
-                      <p>{album.title}</p>
+      {categoryOrder.map((category) => (
+        groupedAlbums[category] && (
+          <div key={category} className="category-section">
+            <h2>{category}</h2>
+            <div className="album-items">
+              {groupedAlbums[category].map((groupedAlbum) => {
+                return albums
+                  .filter((album) => album.name === groupedAlbum.title)
+                  .map((album) => (
+                    <div
+                      key={album.id}
+                      className="album-item"
+                      onClick={() => handleAlbumClick(`https://www.facebook.com/${album.id}`)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <div style={{ textAlign: "center", width: "250px" }}>
+                        <img
+                          src={album.picture.data.url} 
+                          alt={album.name}
+                          style={{
+                            width: "200px",
+                            height: "200px",
+                            objectFit: "cover",
+                          }}
+                        />
+                        <p>{album.name}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ));
+              })}
             </div>
-          )
-      )}
+          </div>
+        )
+      ))}
     </div>
   );
 };

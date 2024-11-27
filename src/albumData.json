@@ -49,7 +49,7 @@
   },
   {
     "id": "album2",
-    "title": "ENGLESKA EXTRA JESEN ZIMA - muski mix",
+    "title": "ENGLESKA EXTRA JESEN ZIMA-muski mix",
     "coverPhotoUrl": "https://i.imgur.com/xCd6MPF.jpeg",
     "albumLinkAndroid": "https://bitly.cx/1p9axa",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122174889770085110",
@@ -57,7 +57,7 @@
   },
   {
     "id": "album3",
-    "title": "ENGLESKA EXTRA JESEN ZIMA - zenski mix",
+    "title": "ENGLESKA EXTRA JESEN ZIMA-zenski mix",
     "coverPhotoUrl": "https://i.imgur.com/MSppjVY.jpeg",
     "albumLinkAndroid": "https://bitly.cx/paFGJ7",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122174889332085110",
@@ -97,7 +97,7 @@
   },
   {
     "id": "album8",
-    "title": "KREM KLASA TANKE JAKNE I MANTILI",
+    "title": "KREM KLASA TANKIH JAKNI,PRSLUKA I MANTILI",
     "coverPhotoUrl": "https://i.imgur.com/9RvrnBN.jpeg",
     "albumLinkAndroid": "https://bitly.cx/MAybPj",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122176278842085110",
@@ -193,7 +193,7 @@
   },
   {
     "id": "album20",
-    "title": "HALJINE",
+    "title": "LETNJE HALJINE",
     "coverPhotoUrl": "https://i.imgur.com/kXQXZA4.jpeg",
     "albumLinkAndroid": "https://bitly.cx/DGM1B",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122156079242085110",
@@ -249,7 +249,7 @@
   },
   {
     "id": "album28",
-    "title": "KUĆNI TEKSTIL",
+    "title": "KUCNI TEKSTIL",
     "coverPhotoUrl": "https://i.imgur.com/Td1uHpc.jpeg",
     "albumLinkAndroid": "https://bitly.cx/95AzT",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122174886752085110",
@@ -353,7 +353,7 @@
   },
   {
     "id": "album48",
-    "title": "ŽENSKI DŽEMPERI I KARDIGANI SUPER KREM KLASA",
+    "title": "ZENSKI DZEMPERI I KARDIGANI",
     "coverPhotoUrl": "https://i.imgur.com/RwE3QqD.jpeg",
     "albumLinkAndroid": "https://bitly.cx/D4nuv",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122180298290085110",
@@ -361,7 +361,7 @@
   },
   {
     "id": "album49",
-    "title": "MUŠKI DŽEMPERI I KARDIGANI",
+    "title": "MUSKI DZEMPERI I KARDIGANI",
     "coverPhotoUrl": "https://i.imgur.com/M9pVq9C.jpeg",
     "albumLinkAndroid": "https://bitly.cx/wwd9EZ",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122180298638085110",
@@ -409,10 +409,18 @@
   },
   {
     "id": "album31",
-    "title": "ŠORCEVI",
+    "title": "ŠORTSEVI",
     "coverPhotoUrl": "https://i.imgur.com/9L6RObf.jpeg",
     "albumLinkAndroid": "https://bitly.cx/S3JD3l",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122155907558085110",
     "category": "PANTALONE, FARMERICE, ŠALVARE, HELANKE I ŠORCEVI"
+  },
+  {
+    "id": "album52",
+    "title": "SWISS KREM MIX",
+    "coverPhotoUrl": "https://i.imgur.com/BgAJybu.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/A1rqQi",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122185684676085110&type=3",
+    "category": "MIKSEVI"
   }
 ]
