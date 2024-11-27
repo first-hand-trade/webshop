@@ -94,7 +94,7 @@ const AlbumGallery = () => {
                     <div
                       key={album.id}
                       className="album-item"
-                      onClick={() => handleAlbumClick(`https://www.facebook.com/${album.id}`)}
+                      onClick={() => handleAlbumClick(`https://m.facebook.com/${album.id}`)}
                       style={{ cursor: "pointer" }}
                     >
                       <div style={{ textAlign: "center", width: "250px" }}>
