@@ -72,21 +72,25 @@ const AlbumGallery = () => {
     fetchAlbums();
   }, []); 
 
-  const handleAlbumClick = (albumName) => {
-    navigate(`/videos/${albumName}`);
-  };
-
-  // const handleAlbumClick = (albumLink) => {
-  //   let link = albumLink.replace("m.facebook.com", "www.facebook.com");
-    
-  //   if (!link.includes("?")) {
-  //     link += "?ref=web";
-  //   } else {
-  //     link += "&ref=web";
-  //   }
-    
-  //   window.location.href = link;
+  // const handleAlbumClick = (albumId) => {
+  //   navigate(`/videos/${albumId}`);
   // };
+
+  const handleAlbumClick = (albumLink) => {
+    let link = albumLink.replace("m.facebook.com", "www.facebook.com");
+    
+    if (!link.includes("?")) {
+      link += "?ref=web";
+    } else {
+      link += "&ref=web";
+    }
+    
+    if (platform === "android") {
+      window.location.href = link;
+    } else {
+      window.open(link, "_blank", "noopener,noreferrer");
+    }
+  };
 
   return (
     <div className="album-gallery">
@@ -102,12 +106,12 @@ const AlbumGallery = () => {
                     <div
                       key={album.id}
                       className="album-item"
-                      onClick={() => handleAlbumClick(album.name)}
+                      onClick={() => handleAlbumClick(`https://m.facebook.com/${album.id}`)}
                       style={{ cursor: "pointer" }}
                     >
                       <div style={{ textAlign: "center", width: "250px" }}>
                         <img
-                          src={album.picture.data.url || groupedAlbum.coverPhotoUrl} 
+                          src={album.picture.data.url} 
                           alt={album.name}
                           style={{
                             width: "200px",
