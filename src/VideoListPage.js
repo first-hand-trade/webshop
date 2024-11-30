@@ -73,7 +73,6 @@ const VideoListPage = () => {
     };
   }, [handleScroll]);
 
-  // Function to extract description until the first comma
   const extractDescription = (description) => {
     const commaIndex = description.indexOf(',');
     return commaIndex !== -1 ? description.slice(0, commaIndex) : description;
@@ -84,7 +83,6 @@ const VideoListPage = () => {
       <h2 style={{ textAlign: 'center' }}>Album: {albumName}</h2>
 
       <div className="video-list">
-        {/* Embeddable Videos */}
         <div className="embeddable-videos" style={{ marginBottom: '40px' }}>
           {videos.length > 0 && videos.filter(video => video.embeddable).map((video) => (
             <div
@@ -100,7 +98,7 @@ const VideoListPage = () => {
                 minHeight: '200px',
               }}
             >
-              <h3>{extractDescription(video.description)}</h3>
+              <h3>{video.description}</h3>
               <div
                 style={{
                   position: 'relative',
@@ -132,7 +130,6 @@ const VideoListPage = () => {
           ))}
         </div>
 
-        {/* Non-Embeddable Videos (Links) */}
         <div className="non-embeddable-videos" style={{ marginBottom: '40px' }}>
           {videos.length > 0 && videos.filter(video => !video.embeddable).map((video) => (
             <div
@@ -148,7 +145,7 @@ const VideoListPage = () => {
                 minHeight: '100px',
               }}
             >
-              <h3>{extractDescription(video.description)}</h3>
+              <h3>{video.description}</h3>
               <a
                 href={`https://www.facebook.com${video.permalink_url}`}
                 target="_blank"
@@ -159,7 +156,7 @@ const VideoListPage = () => {
                   fontSize: '14px',
                 }}
               >
-                Watch Video
+                Pogledaj snimak
               </a>
             </div>
           ))}
