@@ -151,9 +151,23 @@ const VideoListPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  textDecoration: 'underline',
-                  color: '#1a73e8',
+                  textDecoration: 'none',
+                  color: '#000', // Black text color
                   fontSize: '14px',
+                  backgroundColor: '#C49C48', // Golden background
+                  padding: '10px 20px',
+                  borderRadius: '5px',
+                  fontWeight: 'bold',
+                  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)',
+                  transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.transform = 'scale(1.05)';
+                  e.target.style.boxShadow = '0 6px 8px rgba(0, 0, 0, 0.3)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.transform = 'scale(1)';
+                  e.target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.2)';
                 }}
               >
                 Pogledaj snimak
