@@ -48,11 +48,35 @@
     "category": "MIKSEVI"
   },
   {
-    "id": "album2",
-    "title": "ENGLESKA EXTRA JESEN ZIMA-muski mix",
-    "coverPhotoUrl": "https://i.imgur.com/xCd6MPF.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/1p9axa",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174889770085110",
+    "id": "album6",
+    "title": "JESENJI KREM MIX ZENSKI",
+    "coverPhotoUrl": "https://i.imgur.com/JodiG3h.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/3dNmCC",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122172389762085110",
+    "category": "MIKSEVI"
+  },
+  {
+    "id": "album13",
+    "title": "FASHION KREM JESEN ZIMA MIX",
+    "coverPhotoUrl": "https://i.imgur.com/vZRQcZK.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/mS1C",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174888174085110",
+    "category": "MIKSEVI"
+  },
+  {
+    "id": "album52",
+    "title": "SWISS KREM MIX",
+    "coverPhotoUrl": "https://i.imgur.com/BgAJybu.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/A1rqQi",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122185684676085110&type=3",
+    "category": "MIKSEVI"
+  },
+  {
+    "id": "album30",
+    "title": "BRAND MIX EXTRA PLUS PRVA KLASA SVE SEZONE",
+    "coverPhotoUrl": "https://i.imgur.com/I34Sl1s.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/m1ODAm",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122157195680085110",
     "category": "MIKSEVI"
   },
   {
@@ -61,6 +85,14 @@
     "coverPhotoUrl": "https://i.imgur.com/MSppjVY.jpeg",
     "albumLinkAndroid": "https://bitly.cx/paFGJ7",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122174889332085110",
+    "category": "MIKSEVI"
+  },
+  {
+    "id": "album2",
+    "title": "ENGLESKA EXTRA JESEN ZIMA-muski mix",
+    "coverPhotoUrl": "https://i.imgur.com/xCd6MPF.jpeg",
+    "albumLinkAndroid": "https://bitly.cx/1p9axa",
+    "albumLink": "https://www.facebook.com/media/set/?set=a.122174889770085110",
     "category": "MIKSEVI"
   },
   {
@@ -78,14 +110,6 @@
     "albumLinkAndroid": "https://bitly.cx/mHy97",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122174879102085110",
     "category": "SPORTSKI PROGRAM I DUKSERICE"
-  },
-  {
-    "id": "album6",
-    "title": "JESENJI KREM MIX ZENSKI",
-    "coverPhotoUrl": "https://i.imgur.com/JodiG3h.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/3dNmCC",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122172389762085110",
-    "category": "MIKSEVI"
   },
   {
     "id": "album7",
@@ -142,14 +166,6 @@
     "albumLinkAndroid": "https://bitly.cx/6JhJ",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122174880686085110",
     "category": "SPORTSKI PROGRAM I DUKSERICE"
-  },
-  {
-    "id": "album13",
-    "title": "FASHION KREM JESEN ZIMA MIX",
-    "coverPhotoUrl": "https://i.imgur.com/vZRQcZK.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/mS1C",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122174888174085110",
-    "category": "MIKSEVI"
   },
   {
     "id": "album14",
@@ -240,14 +256,6 @@
     "category": "KUĆNI TEKSTIL, BADEMANTILI, AKSESOARI, IGRAČKE, RADNA ODELA, TORBE, BRUSEVI"
   },
   {
-    "id": "album30",
-    "title": "BRAND MIX EXTRA PLUS PRVA KLASA SVE SEZONE",
-    "coverPhotoUrl": "https://i.imgur.com/I34Sl1s.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/m1ODAm",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122157195680085110",
-    "category": "MIKSEVI"
-  },
-  {
     "id": "album32",
     "title": "BADEMANTILI",
     "coverPhotoUrl": "https://i.imgur.com/Kirxqj6.jpeg",
@@ -318,13 +326,5 @@
     "albumLinkAndroid": "https://bitly.cx/wwd9EZ",
     "albumLink": "https://www.facebook.com/media/set/?set=a.122180298638085110",
     "category": "DŽEMPERI"
-  },
-  {
-    "id": "album52",
-    "title": "SWISS KREM MIX",
-    "coverPhotoUrl": "https://i.imgur.com/BgAJybu.jpeg",
-    "albumLinkAndroid": "https://bitly.cx/A1rqQi",
-    "albumLink": "https://www.facebook.com/media/set/?set=a.122185684676085110&type=3",
-    "category": "MIKSEVI"
   }
 ]
