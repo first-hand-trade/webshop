@@ -166,7 +166,7 @@ const VideoListPage = () => {
         </div>
       </div>
 
-      {isLoading && <div style={{ textAlign: 'center' }}>Snimci se učitavaju, molim Vas sačekajte.</div>}
+      {isLoading && <h1 style={{ textAlign: 'center', color: '#b71c1c !important'}}>Uopšteno snimcima treba do minut da se učitaju. Molim Vas sačekajte i ostanite na stranici.</h1>}
       {error && <div className="error">{error}</div>}
     </div>
   );
