@@ -152,9 +152,9 @@ const VideoListPage = () => {
                 rel="noopener noreferrer"
                 style={{
                   textDecoration: 'none',
-                  color: '#000', // Black text color
+                  color: '#000', 
                   fontSize: '14px',
-                  backgroundColor: '#C49C48', // Golden background
+                  backgroundColor: '#C49C48', 
                   padding: '10px 20px',
                   borderRadius: '5px',
                   fontWeight: 'bold',
